@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fiscii privacy policy</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #fbfaf7;
+        --fg: #1d1d1b;
+        --muted: #5f5d57;
+        --accent: #b8860b;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0a0a0a;
+          --fg: #e9e6df;
+          --muted: #a29e94;
+          --accent: #e8b84a;
+        }
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+      }
+
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 2rem 1rem 4rem;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+        margin-bottom: 0.2rem;
+      }
+
+      h2 {
+        font-size: 1.15rem;
+        margin-top: 2rem;
+      }
+
+      .date {
+        color: var(--muted);
+        margin-top: 0;
+      }
+
+      a {
+        color: var(--accent);
+        overflow-wrap: anywhere;
+      }
+
+      li {
+        margin: 0.4rem 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <h1>Fiscii privacy policy</h1>
+      <p class="date">Last updated: 10 October 2026</p>
+      <p>Fiscii is a small fishing game. It has no accounts, no ads, no analytics and no tracking. Nobody (including the developer) receives your data, and nothing is sold.</p>
+
+      <h2>Location and weather</h2>
+      <p>If you allow it, Fiscii reads your <strong>approximate (coarse) location</strong> while the app is open, so the pond can show your real local weather. It never asks for precise or background location.</p>
+      <ul>
+        <li>The position is rounded to about 11 km (0.1°) on your phone before it is used.</li>
+        <li>That rounded position is sent to <strong>Open-Meteo</strong> (api.open-meteo.com), a free weather service, to fetch the current weather. No account, key or identifier is sent with it. Like any web server, Open-Meteo sees your IP address and may keep request logs (which can include the
+          rounded coordinates) for up to 90 days; see its <a href="https://open-meteo.com/en/terms#privacy">privacy section</a>.</li>
+        <li>The same rounded position is passed to <strong>Android's built-in Geocoder</strong> to show a place name (for example your town) next to the weather. On most phones the Geocoder is provided by Google Play services and may look the name up online under Google's privacy policy.</li>
+        <li>The rounded position, the place name and the last weather reading are kept only on your phone.</li>
+      </ul>
+      <p>If you deny location, the game still works with calm default weather.</p>
+
+      <h2>Notifications</h2>
+      <p>The optional daily reminder is a <strong>local</strong> notification, scheduled on your phone. No push service or server is involved. It is off until you turn it on.</p>
+
+      <h2>Your save</h2>
+      <p>Your progress (fish, coins, settings) is stored on your phone only. If Android's own backup is turned on for your Google account, Android may include the app's data in your device backup; that is controlled by your phone's settings, not by Fiscii. Uninstalling the app or clearing its data
+        deletes the save.</p>
+
+      <h2>Children</h2>
+      <p>Fiscii collects no personal information from anyone, including children.</p>
+
+      <h2>Changes and contact</h2>
+      <p>If this policy changes, the new version will be posted at this address with a new date.</p>
+      <p>Questions: dannbos6@gmail.com</p>
+    </main>
+  </body>
+
+</html>
